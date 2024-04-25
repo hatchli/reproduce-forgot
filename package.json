@@ -1,0 +1,57 @@
+{
+  "name": "reproduce-forgot",
+  "description": "A blank template to get started with Payload 3.0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "generate:types": "payload generate:types"
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@payloadcms/db-postgres": "beta",
+    "@payloadcms/email-nodemailer": "3.0.0-beta.18",
+    "@payloadcms/next": "beta",
+    "@payloadcms/plugin-cloud": "beta",
+    "@payloadcms/plugin-cloud-storage": "3.0.0-beta.18",
+    "@payloadcms/plugin-search": "3.0.0-beta.18",
+    "@payloadcms/richtext-lexical": "beta",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "date-fns": "^3.6.0",
+    "libphonenumber-js": "^1.10.61",
+    "lodash.kebabcase": "^4.1.1",
+    "lucide-react": "^0.373.0",
+    "nanoid": "^5.0.7",
+    "next": "^14.3.0-canary.7",
+    "nodemailer": "^6.9.13",
+    "payload": "beta",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.3",
+    "sharp": "0.32.6",
+    "tailwind-merge": "^2.3.0",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+}
